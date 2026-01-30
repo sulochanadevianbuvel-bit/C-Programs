@@ -16,7 +16,6 @@ int main() {
             return 0;
     }
     switch (pay) {
-        case 11:
         case 12:
             cost=cost-20;
             break;
@@ -28,4 +27,5 @@ int main() {
     }
     printf("Pay $%d", cost);
     return 0;
+
 }
