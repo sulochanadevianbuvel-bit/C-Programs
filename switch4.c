@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int order, speed;
+    scanf("%d", &order);
+    scanf("%d", &speed);
+    switch (speed) {
+        case 1:
+            printf("Delivery $50");
+            break;
+        case 2:
+            if (order<1000)
+                printf("Delivery $100");
+            else
+                printf("Delivery Free");
+            break;
+        default:
+            printf("Invalid Speed Type");
+    }
+    return 0;
+}
